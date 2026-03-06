@@ -1,8 +1,8 @@
 import clinicImg from "../assets/clinic.jpg"
 
-export default function Hero() {
+export default function Hero({onBookClick}) {
   return (
-    <section id="hero" className="bg-[#f3f0fa] md:min-h-screen md:flex md:items-center py-16 md:py-0">
+    <section id="hero" className="bg-[#f3f0fa] md:min-h-screen md:max-h-[800px] md:flex md:items-center py-16 md:py-0">
 
       <div className="w-full md:max-w-[1400px] md:mx-auto grid md:grid-cols-2 items-center">
 
@@ -49,16 +49,16 @@ export default function Hero() {
 
           <div className="flex flex-col md:flex-row gap-6 items-center md:items-center">
 
-            <a
-              href="#"
+            <button
+              onClick={onBookClick}
               className="
                 bg-[#7c4dbd] text-white px-8 py-3 rounded-full
                 transition-all duration-300
-                hover:bg-[#4e2d8a] hover:shadow-lg hover:-translate-y-0.5
+                hover:bg-[#4e2d8a] hover:shadow-lg hover:-translate-y-0.5 cursor-pointer
               "
             >
               Book Appointment
-            </a>
+            </button>
 
             <a
               href="#services"

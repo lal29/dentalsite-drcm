@@ -28,17 +28,17 @@ export default function Locations() {
         }
     ]
     return (
-    <section id="locations" className="bg-[#f3f0fa] py-28 scroll-mt-16">
+    <section id="locations" className="bg-primary-bg py-28 scroll-mt-16">
       <div className="max-w-[1200px] mx-auto px-6 md:px-12">
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">
-          <p className="text-[#d4a847] uppercase tracking-[0.2em] text-xs font-semibold mb-4">
+          <p className="text-accent uppercase tracking-[0.2em] text-xs font-semibold mb-4">
             Our Locations
           </p>
 
           <h2
-            className="text-[28px] md:text-4xl text-[#1a1625] mb-6"
+            className="text-[28px] md:text-4xl text-dark-bg mb-6"
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
             Visit Us in Surrey & Vancouver
@@ -67,7 +67,7 @@ export default function Locations() {
             >
               {/* City */}
               <h3
-                className="text-[26px] mb-8 text-[#1a1625]"
+                className="text-[26px] mb-8 text-dark-bg"
                 style={{ fontFamily: "Cormorant Garamond, serif" }}
               >
                 {location.city}
@@ -75,13 +75,13 @@ export default function Locations() {
 
               {/* Address */}
               <div className="flex items-start gap-4 mb-5 text-[#6b6478]">
-                <MapPin className="w-5 h-5 text-[#7c4dbd] mt-1 shrink-0" />
+                <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
                 <span>{location.address}</span>
               </div>
 
               {/* Phone */}
               <div className="flex items-center gap-4 mb-8 text-[#6b6478]">
-                <Phone className="w-5 h-5 text-[#7c4dbd] shrink-0" />
+                <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
                   href={`tel:${location.phone}`}
                   className="hover:underline"
@@ -92,14 +92,14 @@ export default function Locations() {
 
               {/* Hours */}
               <div className="flex gap-4 mb-10">
-                <Clock className="w-5 h-5 text-[#7c4dbd] mt-1 shrink-0" />
+                <Clock className="w-5 h-5 text-primary mt-1 shrink-0" />
                 <div className="space-y-2 text-sm w-full">
                   {location.hours.map((item, index) => (
                     <div
                       key={index}
                       className="flex justify-between border-b border-[#eae6f5] shadow-xs pb-1"
                     >
-                      <span className="font-medium text-[#1a1625]">
+                      <span className="font-medium text-dark-bg">
                         {item.days}
                       </span>
                       <span
@@ -134,7 +134,7 @@ export default function Locations() {
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-[#7c4dbd] font-medium hover:underline"
+                  className="inline-block text-primary font-medium hover:underline"
                 >
                   Get Directions →
                 </a>

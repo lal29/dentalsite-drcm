@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #4a7c6f;
+  --color-primary-dark: #2d5a4f;
+  --color-primary-deep: #1a3832;
+  --color-primary-bg: #f0f7f5;
+  --color-primary-light: #d4ede8;
+  --color-dark-bg: #1a2825;
+  --color-accent: #d4a847;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 }

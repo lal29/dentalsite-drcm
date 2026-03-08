@@ -2,9 +2,9 @@ import clinicImg from "../assets/clinic.jpg"
 
 export default function Hero({onBookClick}) {
   return (
-    <section id="hero" className="bg-[#f3f0fa] md:min-h-screen md:max-h-[800px] md:flex md:items-center py-16 md:py-0">
+    <section id="hero" className="bg-primary-bg md:min-h-screen md:max-h-[800px] md:flex md:items-center py-16 md:py-0">
 
-      <div className="w-full md:max-w-[1400px] md:mx-auto grid md:grid-cols-2 items-center">
+      <div className="w-full md:max-w-[1200px] md:mx-auto grid md:grid-cols-2 items-center">
 
         {/* LEFT SIDE */}
         <div className="
@@ -15,7 +15,7 @@ export default function Hero({onBookClick}) {
           items-center md:items-start
         ">
 
-          <p className="text-[#d4a847] uppercase tracking-[0.2em] text-[11px] mb-6 font-semibold">
+          <p className="text-accent uppercase tracking-[0.2em] text-[11px] mb-6 font-semibold">
             Two Locations — Surrey & Vancouver
           </p>
 
@@ -23,14 +23,14 @@ export default function Hero({onBookClick}) {
             className="
               text-4xl sm:text-5xl md:text-[64px]
               leading-[1.15] md:leading-[1.1]
-              text-[#1a1625]
+              text-dark-bg
               mb-10
               max-w-md md:max-w-none
             "
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
             Your{" "}
-            <span className="text-[#7c4dbd] font-medium tracking-tight italic">
+            <span className="text-primary font-medium tracking-tight italic">
               brightest
             </span>{" "}
             smile starts here.
@@ -52,9 +52,9 @@ export default function Hero({onBookClick}) {
             <button
               onClick={onBookClick}
               className="
-                bg-[#7c4dbd] text-white px-8 py-3 rounded-full
+                bg-primary text-white px-8 py-3 rounded-full
                 transition-all duration-300
-                hover:bg-[#4e2d8a] hover:shadow-lg hover:-translate-y-0.5 cursor-pointer
+                hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 cursor-pointer
               "
             >
               Book Appointment
@@ -62,7 +62,7 @@ export default function Hero({onBookClick}) {
 
             <a
               href="#services"
-              className="text-[#7c4dbd] font-medium hover:underline flex items-center"
+              className="text-primary font-medium hover:underline flex items-center"
             >
               Our Services →
             </a>
@@ -92,7 +92,7 @@ export default function Hero({onBookClick}) {
             <div className="
               absolute -top-6 -left-6
               w-full h-full
-              bg-[#e0d5f5]
+              bg-primary-light
               rounded-[48px]
               -z-10
             "></div>

@@ -14,7 +14,7 @@ export default function BookingModal ({isOpen, onClose}) {
                 className="float-right text-gray-400 hover:text-gray-600 tranisition-colors cursor-pointer">
                     <X size={24}/>
                 </button>
-                <h2 className="text-2xl font-medium text-[#1a1625] mb-2">
+                <h2 className="text-2xl font-medium text-dark-bg mb-2">
                     Choose a Location
                 </h2>
                 <p className="text-[#6b6478] text-sm mb-8">
@@ -27,17 +27,17 @@ export default function BookingModal ({isOpen, onClose}) {
                         rel="noopener noreferrer"
                         onClick={onClose}
                         className="flex items-center gap-4
-                        border-2 border-[#e0d5f5]
-                        hover:border-[#7c4dbd] hover:bg-[#f3f0fa]
+                        border-2 border-primary-light
+                        hover:border-primary hover:bg-primary-bg
                         rounded-2xl p-5
                         transition-all duration-200
                         group"
                     >
-                        <div className="w-10 h-10 bg-[#f3f0fa] group-hover:bg-[#7c4dbd] rounded-full flex items-center justify-center transition-colors duration-200">
-                            <span className="text-[#7c4dbd] group-hover:text-white text-lg">📍</span>
+                        <div className="w-10 h-10 bg-primary-bg group-hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-200">
+                            <span className="text-primary group-hover:text-white text-lg">📍</span>
                         </div>
                         <div>
-                            <p className="font-medium text-[#1a1625]">Surrey Clinic</p>
+                            <p className="font-medium text-dark-bg">Surrey Clinic</p>
                             <p className="text-xs text-[#6b6478]">Suite 302-15957 84th Ave, Surrey BC</p>
                         </div>
                     </a>
@@ -47,17 +47,17 @@ export default function BookingModal ({isOpen, onClose}) {
                         rel="noopener noreferrer"
                         onClick={onClose}
                         className="flex items-center gap-4
-                        border-2 border-[#e0d5f5]
-                        hover:border-[#7c4dbd] hover:bg-[#f3f0fa]
+                        border-2 border-primary-light
+                        hover:border-primary hover:bg-primary-bg
                         rounded-2xl p-5
                         transition-all duration-200
                         group"
                     >
-                        <div className="w-10 h-10 bg-[#f3f0fa] group-hover:bg-[#7c4dbd] rounded-full flex items-center justify-center transition-colors duration-200">
-                            <span className="text-[#7c4dbd] group-hover:text-white text-lg">📍</span>
+                        <div className="w-10 h-10 bg-primary-bg group-hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-200">
+                            <span className="text-primary group-hover:text-white text-lg">📍</span>
                         </div>
                         <div>
-                            <p className="font-medium text-[#1a1625]">Vancouver Clinic</p>
+                            <p className="font-medium text-dark-bg">Vancouver Clinic</p>
                             <p className="text-xs text-[#6b6478]">3911 Fraser Street, Vancouver BC</p>
                         </div>
                     </a>

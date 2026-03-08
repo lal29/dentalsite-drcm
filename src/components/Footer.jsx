@@ -24,7 +24,7 @@ export default function Footer () {
         }
     ]
     return (
-        <footer className="bg-[#1a1625] text-white">
+        <footer className="bg-dark-bg text-white">
             <div className="hidden lg:block max-w-[1200px] mx-auto px-6 md:px-12 pt-16 pb-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
                     <div>
@@ -32,7 +32,7 @@ export default function Footer () {
                             className="text-xl md:text-2xl lg:text-3xl font-medium text-white"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                             >
-                            Dr. Macasiray <span className="text-[#d4a847]">Dental</span>
+                            Dr. Macasiray <span className="text-accent">Dental</span>
                         </a>
                         <p className="text-[#9d94ab] text-sm leading-relaxed mt-4">
                             Gentle, modern dental care for the whole family.
@@ -40,7 +40,7 @@ export default function Footer () {
                     </div>
                     
                     <div>
-                        <h4 className="text-xs uppercase tracking-[0.18em] text-[#d4a847] font-semibold mb-5">Services</h4>
+                        <h4 className="text-xs uppercase tracking-[0.18em] text-accent font-semibold mb-5">Services</h4>
                         <ul className="grid grid-cols-2 md:grid-cols-1 gap-2">
                             {services.map((service) => (
                                 <li key={service} className="mb-3">
@@ -54,18 +54,18 @@ export default function Footer () {
 
                     {locations.map(({city,address,phone,hours}) => (
                         <div key={city} className="mb-8" >
-                            <h4 className="text-xs uppercase tracking-[0.18em] text-[#d4a847] font-semibold mb-5">{city}</h4>
+                            <h4 className="text-xs uppercase tracking-[0.18em] text-accent font-semibold mb-5">{city}</h4>
                             <div className="flex items-start gap-3 mb-4">
-                                <MapPin className="w-4 h-4 text-[#7c4dbd] mt-0.5 shrink-0" />
+                                <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <span className="text-sm text-[#9d94ab]">{address}</span>
                             </div>
                             <div className="flex items-start gap-3 mb-4">
-                                <Phone className="w-4 h-4 text-[#7c4dbd] mt-0.5 shrink-0" />
+                                <Phone className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <span className="text-sm text-[#9d94ab]">{phone}</span>
                             </div>
 
                             <div className="flex items-start gap-3 mb-4">
-                                <Clock className="w-4 h-4 text-[#7c4dbd] mt-0.5 shrink-0" />
+                                <Clock className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <span className="text-sm text-[#9d94ab]">{hours}</span>
                             </div>
                         </div>

@@ -53,12 +53,12 @@ export default function Services() {
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[#d4a847] uppercase tracking-[0.2em] text-xs font-semibold mb-4">
+          <p className="text-accent uppercase tracking-[0.2em] text-xs font-semibold mb-4">
             What We Offer
           </p>
 
           <h2
-            className="text-3xl md:text-4xl text-[#1a1625] mb-6"
+            className="text-3xl md:text-4xl text-dark-bg mb-6"
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
             Comprehensive Dental Services
@@ -71,7 +71,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:gap-6 grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
@@ -79,7 +79,8 @@ export default function Services() {
                 group
                 bg-[#f8f6fc]
                 rounded-3xl
-                p-8
+                p-4
+                md:p-8
                 transition-all
                 duration-300
                 hover:shadow-xl
@@ -88,18 +89,19 @@ export default function Services() {
             >
               {/* Icon */}
               <div className="
-                w-12 h-12
+                w-10 h-10
+                md:w-12 md:h-12
                 bg-white
                 rounded-xl
                 flex items-center justify-center
                 mb-6
                 transition-all
                 duration-300
-                group-hover:bg-[#7c4dbd]/10
+                group-hover:bg-primary/10
               ">
                 <service.icon className="
-                  w-6 h-6
-                  text-[#7c4dbd]
+                  w-5 h-5 md:w-6 md:h-6
+                  text-primary
                   transition-transform
                   duration-300
                   group-hover:scale-110
@@ -108,14 +110,14 @@ export default function Services() {
 
               {/* Title */}
               <h3
-                className="text-lg md:text-xl text-[#1a1625] mb-3 font-medium"
+                className="text-base md:text-xl text-dark-bg mb-3 font-medium"
                 style={{ fontFamily: "Cormorant Garamond, serif" }}
               >
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[#6b6478] leading-relaxed text-sm text-justify">
+              <p className="text-[#6b6478] leading-relaxed text-sm ">
                 {service.description}
               </p>
             </div>

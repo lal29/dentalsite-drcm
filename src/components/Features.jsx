@@ -24,15 +24,15 @@ export default function Features () {
     ]
 
     return (
-        <section id="features" className="bg-[#f3f0fa] py-24">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <section id="features" className="bg-primary-bg py-24">
+            <div className="max-w-[1200px] mx-auto px-6 md:px-12">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div className="text-center">
-                        <p className="text-[#d4a847] uppercase tracking-[0.2em] text-xs font-semibold mb-4">
+                        <p className="text-accent uppercase tracking-[0.2em] text-xs font-semibold mb-4">
                         Why Us
                         </p>
                         <h2
-                            className="text-3xl md:text-4xl text-[#1a1625] mb-6"
+                            className="text-3xl md:text-4xl text-dark-bg mb-6"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                         >
                             Dentistry that puts you first.
@@ -44,10 +44,10 @@ export default function Features () {
                     <div>
                         {reasons.map(({number, title, description}) => (
                             <div key={number} className="flex gap-6 mb-2">
-                                <h2 className="text-4xl text-[#d4a847] shrink-0 font-medium"
+                                <h2 className="text-4xl text-accent shrink-0 font-medium"
                                 style={{ fontFamily: "Cormorant Garamond, serif" }}>{number}</h2>
                                 <div className="items-start mb-4">
-                                    <p className="text-xl md:text-2xl text-[#1a1625]" style={{ fontFamily: "Cormorant Garamond, serif" }}>{title}</p>
+                                    <p className="text-xl md:text-2xl text-dark-bg" style={{ fontFamily: "Cormorant Garamond, serif" }}>{title}</p>
                                     <p className="text-[#6b6478] leading-relaxed text-xs">{description}</p>
                                 </div>
                             </div>

@@ -3,13 +3,13 @@ export default function Features () {
     const reasons = [
         {
             number: "01",
-            title: "Pain Free Promise",
-            description: "Advanced anesthesia and sedation options ensure a comfortable experience every time."
+            title: "Patient comfort focused",
+            description: "We take the time to ensure every patient feels at ease, with a gentle approach tailored to your comfort."
         },
         {
             number: "02",
             title: "Cutting-Edge Technology",
-            description: "Digital X-rays, 3D scanning, and same-day crowns using the latest CAD/CAM systems."
+            description: "Digital X-rays for precise, efficient care — less radiation, instant results, and better treatment planning."
         },
         {
             number: "03",
@@ -19,7 +19,7 @@ export default function Features () {
         {
             number: "04",
             title: "Flexible Scheduling",
-            description: "Evening and weekend appointments at both locations so care fits your busy lifestyle."
+            description: "Weekday and weekend appointments available at both our Surrey and Vancouver locations to fit your busy lifestyle."
         }
     ]
 

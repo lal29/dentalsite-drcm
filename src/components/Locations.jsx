@@ -1,11 +1,12 @@
-import {MapPin,Phone, Clock} from "lucide-react"
+import {MapPin,Phone, Clock, Printer} from "lucide-react"
 
 export default function Locations() {
     const locations = [
         {
             city: "Vancouver",
-            address: "3911 Fraser Street, Vancouver B.C V5V4E5",
+            address: "3911 Fraser Street, Vancouver B.C V5V 4E5",
             phone: "604-731-1512",
+            fax: "",
             hours: [
                 { days: "Mon–Fri", time: "9:00am – 5:30pm" },
                 { days: "Sat", time: "9:00am – 4:00pm" },
@@ -15,8 +16,9 @@ export default function Locations() {
         },
         {
             city: "Surrey",
-            address: "Suite 302-15957 84 th Avenue, Surrey, B.C. V4N0W7",
+            address: "Suite 302-15957 84th Avenue, Surrey, B.C. V4N 0W7",
             phone: "604-593-5550",
+            fax: "604-593-5551",
             hours: [
                 { days: "Mon–Wed", time: "9:00am – 5:30pm" },
                 { days: "Thu", time: "Closed" },
@@ -80,7 +82,7 @@ export default function Locations() {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-4 mb-8 text-[#6b6478]">
+              <div className="flex items-center gap-4 mb-5 text-[#6b6478]">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
                   href={`tel:${location.phone}`}
@@ -88,6 +90,12 @@ export default function Locations() {
                 >
                   {location.phone}
                 </a>
+              </div>
+
+              {/* Fax */}
+              <div className="flex items-center gap-4 mb-8 text-[#6b6478]">
+                <Printer className="w-5 h-5 text-primary shrink-0" />
+                <span>Fax: {location.fax}</span>
               </div>
 
               {/* Hours */}

@@ -38,7 +38,7 @@ export default function BookingModal ({isOpen, onClose}) {
                         </div>
                         <div>
                             <p className="font-medium text-dark-bg">Surrey Clinic</p>
-                            <p className="text-xs text-[#6b6478]">Suite 302-15957 84th Ave, Surrey BC</p>
+                            <p className="text-xs text-[#6b6478]">Suite 302-15957 84th Avenue, Surrey, B.C. V4N 0W7</p>
                         </div>
                     </a>
 
@@ -58,7 +58,7 @@ export default function BookingModal ({isOpen, onClose}) {
                         </div>
                         <div>
                             <p className="font-medium text-dark-bg">Vancouver Clinic</p>
-                            <p className="text-xs text-[#6b6478]">3911 Fraser Street, Vancouver BC</p>
+                            <p className="text-xs text-[#6b6478]">3911 Fraser Street, Vancouver B.C V5V 4E5</p>
                         </div>
                     </a>
                 </div>

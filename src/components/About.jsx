@@ -1,7 +1,7 @@
-import toothImg from "../assets/tooth.svg"
+import toothImg from "../assets/tooth.png"
 
 const stats = [
-  { value: "30+ Years", label: "Clinical Experience" },
+  { value: "40+ Years", label: "Clinical Experience" },
   { value: "2 Locations", label: "Serving Surrey & Vancouver" },
   { value: "Advanced", label: "Modern Technology" },
   { value: "Family Care", label: "All Ages Welcome" },
@@ -49,12 +49,12 @@ export default function About() {
             className="text-3xl md:text-4xl text-dark-bg mb-6 text-center"
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
-            Dr. Cresencia Macasiray
+            Dr. Cresencia Soriano Macasiray
           </h2>
           <div className="max-w-xl">
               <p className="text-[#6b6478] leading-[1.8] mb-6 text-left">
-                With over 30 years of experience in dentistry,
-                Dr. Macasiray is dedicated to providing gentle,
+                With over 40 years of experience in dentistry,
+                Dr. Cresencia S. Macasiray is dedicated to providing gentle,
                 patient-focused care using the latest techniques and technology.
               </p>
 

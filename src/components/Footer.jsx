@@ -5,7 +5,7 @@ export default function Footer () {
         "General Dentistry",
         "Cosmetic Dentistry",
         "Orthodontics",
-        "Dental Implants",
+        "Full Dental Checkup & Diagnosis",
         "Emergency Care",
         "Pediatric Dentistry"
     ]
@@ -18,7 +18,7 @@ export default function Footer () {
         },
         {
             city: "Surrey",
-            address: "Suite 302-15957 84 th Avenue, Surrey, B.C. V4N 0W7",
+            address: "Suite 302-15957 84th Avenue, Surrey, B.C. V4N 0W7",
             phone: "604-593-5550",
             hours: "Mon-Wed 9am–5:30pm · Fri 9am–5:30pm · Sat 9am–4pm",
         }
@@ -32,7 +32,7 @@ export default function Footer () {
                             className="text-xl md:text-2xl lg:text-3xl font-medium text-white"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                             >
-                            Dr. Macasiray <span className="text-accent">Dental</span>
+                            Dr. Cresencia S. Macasiray
                         </a>
                         <p className="text-[#9d94ab] text-sm leading-relaxed mt-4">
                             Gentle, modern dental care for the whole family.

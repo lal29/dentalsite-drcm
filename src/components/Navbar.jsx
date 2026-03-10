@@ -39,7 +39,10 @@ export default function Navbar({onBookClick}) {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
         <a href="#hero" className="text-xl sm:text-2xl md:text-3xl font-medium text-primary-dark whitespace-nowrap"
           style={{ fontFamily: "Cormorant Garamond, serif" }}>
-            Dr. Cresencia S. <span className="text-accent">Macasiray</span>
+            {/* Mobile — shorter */}
+              <span className="text-sm sm:text-xl md:text-2xl lg:text-3xl">
+                Dr. Cresencia S. <span className="text-accent">Macasiray</span>
+              </span>
         </a>
           <div className="flex items-center gap-3">
             {/* Links */}

@@ -71,31 +71,22 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 grid-cols-2 md:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
               className="
-                group
-                bg-[#f8f6fc]
-                rounded-3xl
-                p-8
-                transition-all
-                duration-300
-                hover:shadow-xl
-                hover:-translate-y-1
+                group bg-[#f8f6fc] rounded-2xl p-4 md:p-8
+                text-center md:text-left
+                transition-all duration-300 hover:shadow-xl hover:-translate-y-1
               "
             >
               {/* Icon */}
               <div className="
-                w-12 h-12
-                bg-white
-                rounded-xl
-                flex items-center justify-center
-                mb-6
-                transition-all
-                duration-300
-                group-hover:bg-[#7c4dbd]/10
+                w-10 h-10 bg-white rounded-xl 
+                flex items-center justify-center 
+                mb-3 md:mb-6
+                mx-auto md:mx-0
               ">
                 <service.icon className="
                   w-6 h-6
@@ -115,7 +106,7 @@ export default function Services() {
               </h3>
 
               {/* Description */}
-              <p className="text-[#6b6478] leading-relaxed text-sm text-justify">
+              <p className="text-[#6b6478] leading-relaxed text-xs md:text-sm">
                 {service.description}
               </p>
             </div>

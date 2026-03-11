@@ -20,7 +20,7 @@ function StatCard({value,label}) {
 export default function About() {
   return (
     <section id="about" className="bg-white py-20 scroll-mt-16">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
 
         {/* LEFT – Image */}
         <div className="hidden md:flex justify-center items-center">

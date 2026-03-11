@@ -31,7 +31,7 @@ export default function Locations() {
     ]
     return (
     <section id="locations" className="bg-primary-bg py-28 scroll-mt-16">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">

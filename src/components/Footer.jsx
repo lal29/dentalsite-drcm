@@ -25,7 +25,7 @@ export default function Footer () {
     ]
     return (
         <footer className="bg-dark-bg text-white">
-            <div className="hidden lg:block max-w-[1200px] mx-auto px-6 md:px-12 pt-16 pb-10">
+            <div className="hidden lg:block max-w-[1400px] mx-auto px-6 md:px-12 pt-16 pb-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
                     <div>
                         <a href="#"
@@ -73,7 +73,7 @@ export default function Footer () {
                 </div>
             </div>
             <div className="border-t border-white/10">
-                <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-5">
+                <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-5">
                     <p className="text-xs text-[#9d94ab]">&copy; {new Date().getFullYear()} Dr. Macasiray Dental clinic</p>
                 </div>
             </div>

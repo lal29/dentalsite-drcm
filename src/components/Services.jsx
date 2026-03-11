@@ -49,7 +49,7 @@ export default function Services() {
 
   return (
     <section id="services" className="bg-white py-24 scroll-mt-16">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

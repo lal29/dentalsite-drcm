@@ -2,7 +2,7 @@ import clinicImg from "../assets/clinic.jpg"
 
 export default function Hero({onBookClick}) {
   return (
-    <section id="hero" className="bg-primary-bg md:min-h-screen md:max-h-[800px] md:flex md:items-center py-16 md:py-0">
+    <section id="hero" className="bg-primary-bg md:min-h-[700px] md:max-h-[800px] md:flex md:items-center py-8 md:py-0 scroll-mt-16">
 
       <div className="w-full md:max-w-[1200px] md:mx-auto grid md:grid-cols-2 items-center">
 

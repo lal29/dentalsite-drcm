@@ -93,10 +93,13 @@ export default function Locations() {
               </div>
 
               {/* Fax */}
-              <div className="flex items-center gap-4 mb-8 text-[#6b6478]">
-                <Printer className="w-5 h-5 text-primary shrink-0" />
-                <span>Fax: {location.fax}</span>
-              </div>
+              {location.fax && (
+                <div className="flex items-center gap-4 mb-8 text-[#6b6478]">
+                  <Printer className="w-5 h-5 text-primary shrink-0" />
+                  <span>Fax: {location.fax}</span>
+                </div>
+              )}
+              
 
               {/* Hours */}
               <div className="flex gap-4 mb-10">

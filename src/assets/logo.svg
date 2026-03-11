@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="circleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a7c6f"/>
+      <stop offset="100%" stop-color="#1a3832"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circle emblem background -->
+  <circle cx="40" cy="40" r="34" fill="url(#circleGrad)"/>
+  <circle cx="40" cy="40" r="30" fill="none" stroke="white" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Tooth inside circle -->
+  <path d="
+    M 28 36
+    C 24 36, 22 40, 22 44
+    C 22 49, 24 53, 27 57
+    C 29 60, 30 62, 32 59
+    C 34 55, 34 52, 40 52
+    C 46 52, 46 55, 48 59
+    C 50 62, 51 60, 53 57
+    C 56 53, 58 49, 58 44
+    C 58 40, 56 36, 52 36
+    C 48 36, 45 39, 40 39
+    C 35 39, 32 36, 28 36 Z
+  " fill="white" opacity="0.95"/>
+
+  <!-- Tooth crown bumps -->
+  <path d="
+    M 28 36 C 26 29, 29 23, 33 21 C 37 19, 40 24, 40 24
+    C 40 24, 43 19, 47 21 C 51 23, 54 29, 52 36
+  " fill="white" opacity="0.95"/>
+
+  <!-- Gold star sparkle -->
+  <circle cx="58" cy="12" r="3" fill="#d4a847"/>
+  <line x1="58" y1="7" x2="58" y2="17" stroke="#d4a847" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="53" y1="12" x2="63" y2="12" stroke="#d4a847" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Text -->
+  <text x="84" y="30" font-family="Georgia, serif" font-size="11" fill="#6b6478" letter-spacing="4" font-weight="400">DR. CRESENCIA S.</text>
+  <text x="84" y="50" font-family="Georgia, serif" font-size="22" fill="#1a2825" letter-spacing="1" font-weight="600">Macasiray</text>
+  <text x="84" y="66" font-family="Arial, sans-serif" font-size="10" fill="#4a7c6f" letter-spacing="5">DENTAL CLINIC</text>
+</svg>

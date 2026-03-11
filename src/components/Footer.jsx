@@ -1,4 +1,5 @@
 import {MapPin, Phone, Clock} from "lucide-react"
+import logo from "../assets/logo.svg"
 
 export default function Footer () {
     const services = [
@@ -28,11 +29,10 @@ export default function Footer () {
             <div className="hidden lg:block max-w-[1400px] mx-auto px-6 md:px-12 pt-16 pb-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
                     <div>
-                        <a href="#"
-                            className="text-xl md:text-2xl lg:text-3xl font-medium text-white"
-                            style={{ fontFamily: "Cormorant Garamond, serif" }}
-                            >
-                            Dr. Cresencia S. Macasiray
+                        <a href="#hero">
+                            <div className="bg-primary-bg rounded-xl p-2 inline-block">
+                                <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-14 w-auto" />
+                            </div>
                         </a>
                         <p className="text-[#9d94ab] text-sm leading-relaxed mt-4">
                             Gentle, modern dental care for the whole family.

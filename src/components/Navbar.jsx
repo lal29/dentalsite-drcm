@@ -1,5 +1,6 @@
 import { useState , useEffect} from "react";
 import {Menu, X} from "lucide-react";
+import logo from "../assets/logo.svg"
 
 export default function Navbar({onBookClick}) {
 
@@ -35,14 +36,10 @@ export default function Navbar({onBookClick}) {
 
   return (
     <nav className="sticky top-0 z-50 bg-primary-bg/95 backdrop-blur-md border-b border-primary-light shadow-sm">
-      
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
-        <a href="#hero" className="text-xl sm:text-2xl md:text-3xl font-medium text-primary-dark whitespace-nowrap"
-          style={{ fontFamily: "Cormorant Garamond, serif" }}>
-            {/* Mobile — shorter */}
-              <span className="text-sm sm:text-xl md:text-2xl lg:text-3xl">
-                Dr. Cresencia S. <span className="text-accent">Macasiray</span>
-              </span>
+
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 sm:px-6 md:px-16 py-4">
+        <a href="#hero">
+          <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-12 md:h-20 w-auto" />
         </a>
           <div className="flex items-center gap-3">
             {/* Links */}

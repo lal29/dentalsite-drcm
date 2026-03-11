@@ -90,7 +90,7 @@ export default function Services() {
               ">
                 <service.icon className="
                   w-6 h-6
-                  text-[#7c4dbd]
+                  text-primary
                   transition-transform
                   duration-300
                   group-hover:scale-110

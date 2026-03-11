@@ -24,7 +24,7 @@ export default function Features () {
     ]
 
     return (
-        <section id="features" className="bg-primary-bg py-24">
+        <section id="features" className="bg-primary-bg py-24 scroll-mt-16">
             <div className="max-w-[1400px] mx-auto px-6 md:px-12">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div className="text-center">

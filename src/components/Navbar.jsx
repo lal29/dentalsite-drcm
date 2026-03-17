@@ -35,21 +35,21 @@ export default function Navbar({onBookClick}) {
   }, [])
 
   return (
-    <nav className="sticky top-0 z-50 bg-primary-bg/95 backdrop-blur-md border-b border-primary-light shadow-sm">
+    <nav className="sticky top-0 z-50 bg-primary-dark backdrop-blur-md border-b border-primary-light shadow-sm">
 
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 sm:px-6 md:px-16 py-4">
         <a href="#hero">
-          <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-12 md:h-20 w-auto" />
+          <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-16 md:h-20 w-auto" />
         </a>
           <div className="flex items-center gap-3">
             {/* Links */}
-            <ul className="hidden md:flex items-center text-sm font-medium flex gap-8 uppercase tracking-[0.18em] text-[#6b6478]">
+            <ul className="hidden md:flex items-center text-sm font-medium gap-8 uppercase tracking-[0.18em] text-white/80">
                 {links.map(({label,href, id}) => (
                   <li key={label}>
                     <a href={href} className={`transition-colors duration-200 ${
                       activeSection === id 
-                      ? "text-primary font-semibold border-b-2 border-primary pb-0.5" 
-                      : "text-[#6b6478] hover:text-primary"
+                      ? "text-white font-semibold border-b-2 border-accent pb-0.5"
+                      : "text-white/70 hover:text-white"
                     }`}>
                       {label}
                     </a>
@@ -58,13 +58,16 @@ export default function Navbar({onBookClick}) {
                 }
             </ul>
             <button onClick={onBookClick}
-            className="bg-primary text-white px-5 py-2 md:px-8 md:py-3 text-sm rounded-full hover:bg-primary-dark transition-all cursor-pointer">
-            Book Now
+              className="bg-accent text-white 
+                px-4 py-1.5 text-xs
+                md:px-8 md:py-3 md:text-sm
+                rounded-full hover:bg-yellow-600 transition-all cursor-pointer whitespace-nowrap">
+              Book Now
             </button>
 
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-primary-dark"
+              className="md:hidden text-white"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
@@ -72,15 +75,15 @@ export default function Navbar({onBookClick}) {
           </div>
       </div>
         { isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-primary-bg border-t border-primary-light px-6 py-4 shadow-lg">
-            <ul className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-[#6b6478]">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-primary-dark border-t border-primary-deep px-6 py-4 shadow-lg">
+            <ul className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-body">
               {links.map(({label,href, id}) =>(
                   <li key={label}>
                     <a href={href} onClick={() => setIsMenuOpen(false)}
                       className={`block py-1 transition-colors duration-200 ${
                         activeSection === id 
-                        ? "text-primary font-semibold"
-                        : "text-[#6b6478] hover:text-primary"
+                        ? "text-white font-semibold"
+                        : "text-white/70 hover:text-white"
                       }`}
                     >
                       {label}             

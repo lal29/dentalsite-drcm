@@ -58,7 +58,7 @@ export default function Services() {
           </p>
 
           <h2
-            className="text-3xl md:text-4xl text-[#1a1625] mb-6"
+            className="text-3xl md:text-4xl text-dark-bg mb-6"
             style={{ fontFamily: "Cormorant Garamond, serif" }}
           >
             Comprehensive Dental Services

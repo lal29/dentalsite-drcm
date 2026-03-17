@@ -20,7 +20,17 @@ export default function Features () {
             number: "04",
             title: "Flexible Scheduling",
             description: "Weekday and weekend appointments available at both our Surrey and Vancouver locations to fit your busy lifestyle."
-        }
+        },
+        {
+            number: "05",
+            title: "We Accept CDCP",
+            description: "We proudly accept the Canadian Dental Care Plan at both our Surrey and Vancouver locations."
+        },
+        {
+            number: "06",
+            title: "In-House Specialists",
+            description: "Our in-house oral surgeon and dental hygienist provide specialized care without the need for referrals."
+        },
     ]
 
     return (

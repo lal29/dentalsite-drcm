@@ -57,12 +57,6 @@ export default function About() {
                 Dr. Cresencia S. Macasiray is dedicated to providing gentle,
                 patient-focused care using the latest techniques and technology.
               </p>
-
-              <p className="text-[#6b6478] leading-[1.8] mb-8 text-left">
-                Her philosophy centers around comfort, precision, and building
-                long-term relationships with every patient who walks through
-                the clinic doors.
-              </p>
           </div>
 
           {/* Highlights */}

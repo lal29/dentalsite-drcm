@@ -1,5 +1,5 @@
 import {MapPin, Phone, Clock} from "lucide-react"
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo_dark.svg"
 
 export default function Footer () {
     const services = [
@@ -31,7 +31,7 @@ export default function Footer () {
                     <div>
                         <a href="#hero">
                             <div className="bg-primary-bg rounded-xl p-2 inline-block">
-                                <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-14 w-auto" />
+                                <img src={logo} alt="Dr. Macasiray Dental Clinic" className="h-12 w-auto" />
                             </div>
                         </a>
                         <p className="text-[#9d94ab] text-sm leading-relaxed mt-4">

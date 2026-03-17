@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Features from "./components/Features";
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Navbar onBookClick={() => setIsModalOpen(true)}/>
+      <Banner />
       <Hero onBookClick={() => setIsModalOpen(true)}/>
       <Services />
       <Features />
